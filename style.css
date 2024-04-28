@@ -1,0 +1,13 @@
+body{
+    background: #010003;
+}
+
+.stopwatch{
+    /* max-width: 600px; */
+    width: 90%;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 60px;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+}
