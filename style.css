@@ -9,7 +9,6 @@ body{
     color: #fff;
     text-align: center;
     margin: 8rem auto;
-    box-shadow: 0 10px 10px 10px rgba(230, 221, 221, 0.674);
     padding: 4rem 0;
 }
 .stopwatch h1{
@@ -56,7 +55,7 @@ body{
 
 @media (max-width: 600px){
     .stopwatch{
-        width: 50%;
+        width: 60%;
         box-shadow: none;
     }
     .stopwatch h1{
@@ -69,6 +68,10 @@ body{
     .button img:nth-child(2){
         width: 10rem;
         height: 10rem;
+    }
+    #play-button{
+        height: 6rem;
+        width: 6rem;
     }
 }
 
