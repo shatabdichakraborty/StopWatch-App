@@ -1,98 +1,99 @@
-body{
+body {
     background: #010003;
-}
-
-.stopwatch{
+  }
+  
+  .stopwatch {
     /* max-width: 600px; */
-    width: 50%;
+    width: 75%;
     font-size: 4rem;
     color: #fff;
     text-align: center;
-    margin: 8rem auto;
+    margin: auto;
     padding: 4rem 0;
-}
-.stopwatch h1{
-    font-family: 'Courier New', Courier, monospace;
-    margin-top: 8rem;
+  }
+  .stopwatch h1 {
+    font-family: "Courier New", Courier, monospace;
     font-size: 9rem;
     font-weight: 400;
-}
+    margin: 0%;
+  }
 .button{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+  }
 #btn{
     all: unset;
-}
-
+  }
+  
 .button img{
     width : 8rem;
     margin: 0 4rem;
     cursor: pointer;
-}
-
+  }
+  
 .button img:nth-child(2){
     width: 15rem;
     height: 15rem;
-}
+  }
 #play-button{
     height: 10rem;
     width: 10rem;
-}
-
-#ply-btn {
- display: block;
- background-color: black;  
- border: 0;
-}
-
-#pause-button {
+  }
+  
+  #ply-btn {
+    display: block;
+    background-color: black;
+    border: 0;
+  }
+  
+  #pause-button {
     display: none;
     height: 10rem;
     width: 10rem;
-}
-
+  }
+  
 @media (max-width: 600px){
     .stopwatch{
-        width: 60%;
-        box-shadow: none;
+        width: 50%;
+      box-shadow: none;
     }
     .stopwatch h1{
-        font-size: 3rem;
+      font-size: 3rem;
     }
     .button img{
-        width: 3rem;
-        margin: 0 2rem 0 2rem;
+      width: 3rem;
+      margin: 0 2rem 0 2rem;
     }
     .button img:nth-child(2){
-        width: 10rem;
-        height: 10rem;
+      width: 10rem;
+      height: 10rem;
     }
     #play-button{
         height: 6rem;
         width: 6rem;
     }
-}
-
+  }
+  
 @media (max-width: 1200px){
     .stopwatch{
-        width: 50%;
-        box-shadow: none;
+      width: 50%;
+      box-shadow: none;
     }
     .stopwatch h1{
-        font-size: 3rem;
+      font-size: 3rem;
     }
     .button img{
-        width: 3rem;
-        margin: 0 2rem 0 2rem;
+      width: 3rem;
+      margin: 0 2rem 0 2rem;
     }
     .button img:nth-child(2){
-        width: 10rem;
-        height: 10rem;
+      width: 10rem;
+      height: 10rem;
     }
     #play-button{
-        height: 6rem;
-        width: 6rem;
+      height: 6rem;
+      width: 6rem;
     }
-}
+  }
+  
