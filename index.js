@@ -3,6 +3,7 @@ let time = document.getElementById("time");
 let timer = null;
 let stopflag = false;
 let pauseFlag = false;
+let refreshtimer = false;
 
 function pause() {
   pauseFlag = false;
@@ -29,6 +30,11 @@ function stopwatch() {
     (seconds > 9 ? seconds : "0" + seconds);
 }
 function watchStart() {
+  if (refreshtimer) {
+    watchReset();
+    renderPLayPauseButton();
+    refreshtimer = false;
+  }
   pauseFlag = true;
   renderPLayPauseButton();
   if (stopflag == false) {
@@ -42,7 +48,7 @@ function watchStart() {
 function pauseStopWatch() {}
 
 function watchStop() {
-  stopflag = true;
+  refreshtimer = true;
   pauseFlag = false;
   renderPLayPauseButton();
 
@@ -71,7 +77,7 @@ function watchReset() {
   clearInterval(timer);
   [seconds, minutes, hours] = [0, 0, 0];
   time.innerHTML = "00:00:00";
-  stopflag = true;
+  // stopflag = true;
   pauseFlag = false;
   renderPLayPauseButton();
 }

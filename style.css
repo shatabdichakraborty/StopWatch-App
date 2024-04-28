@@ -33,13 +33,13 @@ body{
     cursor: pointer;
 }
 
-/* .button img:hover{
-    transform: scale(1.1);
-} */
-
 .button img:nth-child(2){
     width: 15rem;
     height: 15rem;
+}
+#play-button{
+    height: 10rem;
+    width: 10rem;
 }
 
 #ply-btn {
@@ -50,4 +50,46 @@ body{
 
 #pause-button {
     display: none;
+    height: 10rem;
+    width: 10rem;
+}
+
+@media (max-width: 600px){
+    .stopwatch{
+        width: 50%;
+        box-shadow: none;
+    }
+    .stopwatch h1{
+        font-size: 3rem;
+    }
+    .button img{
+        width: 3rem;
+        margin: 0 2rem 0 2rem;
+    }
+    .button img:nth-child(2){
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+@media (max-width: 1200px){
+    .stopwatch{
+        width: 50%;
+        box-shadow: none;
+    }
+    .stopwatch h1{
+        font-size: 3rem;
+    }
+    .button img{
+        width: 3rem;
+        margin: 0 2rem 0 2rem;
+    }
+    .button img:nth-child(2){
+        width: 10rem;
+        height: 10rem;
+    }
+    #play-button{
+        height: 6rem;
+        width: 6rem;
+    }
 }
