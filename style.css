@@ -55,12 +55,19 @@ body {
   
 @media (max-width: 600px){
     .stopwatch{
-        width: 50%;
+        width: 65%;
       box-shadow: none;
     }
-    .stopwatch h1{
+    
+    .stopwatch h3{
       font-size: 3rem;
     }
+    #heading{
+        padding: 0;
+        font-size: 2rem;
+        
+    }
+    
     .button img{
       width: 3rem;
       margin: 0 2rem 0 2rem;
@@ -73,6 +80,10 @@ body {
         height: 6rem;
         width: 6rem;
     }
+    #pause-button {
+        height: 6rem;
+        width: 6rem;
+      }
   }
   
 @media (max-width: 1200px){
@@ -95,5 +106,8 @@ body {
       height: 6rem;
       width: 6rem;
     }
+    #pause-button {
+        height: 6rem;
+        width: 6rem;
+      }
   }
-  
