@@ -4,10 +4,50 @@ body{
 
 .stopwatch{
     /* max-width: 600px; */
-    width: 90%;
-    font-family: 'Orbitron', sans-serif;
-    font-size: 60px;
+    width: 50%;
+    font-size: 4rem;
     color: #fff;
     text-align: center;
-    margin-top: 100px;
+    margin: 8rem auto;
+    box-shadow: 0 10px 10px 10px rgba(230, 221, 221, 0.674);
+    padding: 4rem 0;
+}
+.stopwatch h1{
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 8rem;
+    font-size: 9rem;
+    font-weight: 400;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btn{
+    all: unset;
+}
+
+.button img{
+    width : 8rem;
+    margin: 0 4rem;
+    cursor: pointer;
+}
+
+/* .button img:hover{
+    transform: scale(1.1);
+} */
+
+.button img:nth-child(2){
+    width: 15rem;
+    height: 15rem;
+}
+
+#ply-btn {
+ display: block;
+ background-color: black;  
+ border: 0;
+}
+
+#pause-button {
+    display: none;
 }

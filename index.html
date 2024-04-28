@@ -8,12 +8,38 @@
   </head>
   <body>
     <div class="stopwatch">
-      <h1>00:00:00</h1>
+      <h1 id="time">00:00:00</h1>
       <div class="button">
-        <img src="images/stop.png" alt="stop-button" />
-        <img src="images/start.png" alt="play-button" />
-        <img src="images/reset.png" alt="reset-button" />
+        <button id="btn" disabled>
+          <img
+            src="images/stop.png"
+            alt="stop-button"
+            loading="lazy"
+            onclick="watchStop()"
+          />
+        </button>
+        <button id="ply-btn" onclick="watchStart()">
+          <img
+            id="play-button"
+            src="images/start.png"
+            alt="play-button"
+            loading="lazy"
+          />
+        </button>
+        <button id="btn" onclick="pause()">
+          <img
+            id="pause-button"
+            src="images/pause-new.png"
+            alt="play-button"
+            loading="lazy"
+          />
+        </button>
+        <button id="btn" onclick="watchReset()">
+          <img src="images/reset.png" alt="reset-button" loading="lazy" />
+        </button>
       </div>
     </div>
+
+    <script src="index.js"></script>
   </body>
 </html>
